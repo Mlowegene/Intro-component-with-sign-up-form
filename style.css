@@ -24,7 +24,7 @@ body {
 .container {
     width: 100%;
     height: 100vh;
-    padding: 3rem;
+    /* padding: 3rem; */
     display: flex;
 }
 
@@ -56,6 +56,7 @@ body {
     width: 50rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .try-part {
@@ -79,7 +80,7 @@ body {
     width: 25rem;
     height: auto;
     margin: 0rem 3rem;
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: #ffffff;
     border-radius: 8px;
     display: flex;
@@ -98,12 +99,11 @@ body {
 }
 
 .input-field input{
-    width: 20rem;
-    height: 2.8rem;
-    margin: 1rem ;
+    width: 21rem;
+    height: 2.5rem;
+    margin: .7rem ;
     border-radius: .3rem;
     border: 1px solid hsl(246, 25%, 77%);
-    padding-left: 1.5rem;
 }
 
 .input-field input:focus {
@@ -112,7 +112,15 @@ body {
 
 .input-field input::placeholder {
     font-weight: 600;
+    padding-left: 1.5rem;
 }
+
+
+
+/* .input-field img {
+    position: absolute;
+    right: 13.5%;
+} */
 
 .input-field button{
     cursor: pointer;
@@ -127,6 +135,51 @@ body {
     border-radius: .3rem;
     box-shadow: 0px 4px 4px -1px hsl(154, 59%, 40%);
 }
+/* ------------- form validation ---------------- */
+
+
+.input-field.error input{
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url('./images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: 95%;
+
+}
+
+.input-field .span {
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+/* .error {
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url('./images/icon-error.svg')  no-repeat;
+    background-position: 95% 50%;
+} */
+
+/* .error-text {
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-style: italic;
+    margin-left: auto;
+    margin-top: -15px;
+    margin-bottom: 20px;
+} */
+
+.input-field.success input {
+    border: 2px solid hsl(154, 59%, 51%);
+}
+
+/* .success {
+    border: 2px solid hsl(154, 59%, 51%);
+} */
+
+
+
+
 
 
 /* -----------------media queries-------------------------------- */
