@@ -48,11 +48,9 @@ function errorFunction(req, message) {
     
     const span = formControl.querySelector('.span');
     span.innerText = message;
-    console.log("nimefika apa");
 }
 
 function successFunction(req) {
-    console.log("imefanikiwa");
     const formControl = req.parentElement;
     formControl.classList.remove('error');
 
